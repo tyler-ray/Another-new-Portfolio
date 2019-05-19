@@ -1,3 +1,5 @@
+$primary : black;
+
 .logoName {
   font-family: Gugi;
   font-size: 2rem;
@@ -9,7 +11,13 @@
 .padding {
   padding: 4rem 0;
 }
-
+.noshow{
+  text-decoration:none;
+  color:$primary;
+}
+.project-card{
+  height:100%;
+}
 .carousel-caption {
   position: absolute;
   top: 10%;

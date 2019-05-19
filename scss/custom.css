@@ -12,6 +12,15 @@
   padding: 4rem 0;
 }
 
+.noshow {
+  text-decoration: none;
+  color: black;
+}
+
+.project-card {
+  height: 100%;
+}
+
 .carousel-caption {
   position: absolute;
   top: 10%;
