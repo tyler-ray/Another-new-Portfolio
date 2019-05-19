@@ -1,5 +1,93 @@
-
-.logoName{
-  font-family:Gugi;
-  font-size:2rem;
+.logoName {
+  font-family: Gugi;
+  font-size: 2rem;
 }
+.my-name{
+  font-family:Gugi;
+  font-weight:100 !important;
+}
+.padding {
+  padding: 4rem 0;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 10%;
+
+  h1{
+    font-size:400%
+  }
+  h3{
+    font-size:150%;
+  }
+}
+.main-title {
+  text-shadow: 2px 3px 5px black;
+}
+.sub-title {
+  text-shadow: 2px 3px 5px black;
+}
+.myBackground {
+  transform-origin: -50%;
+}
+
+.skillsRow .card{
+  border:none;
+}
+
+
+
+.big{
+  height:300px;
+  border:10px solid red;
+}
+@media(min-width:450px){
+  .carousel-caption{
+    height:auto;
+    top:50%;
+    transform: translateY(-60%);
+
+    h1{
+      font-size:400%;
+    }
+  }
+}
+
+@media(min-width:576px){
+  .card-title{
+    font-size: 150%;
+  }
+}
+
+
+
+@media(min-width:700px){
+  .carousel-caption{
+    height:auto;
+    top:50%;
+    transform: translateY(-60%);
+
+    h1{
+      font-size:600%;
+    }
+  }
+}
+
+@media(min-width:1000px){
+  .carousel-caption{
+    height:auto;
+    top:50%;
+    transform: translateY(-50%);
+  }
+  .myBackground{
+    width:100%;
+  }
+  .img-fluid{
+    max-width: 300px;
+  }
+}
+// @media(min-width:1200px){
+//   .card-title{
+//     font-size: 75%;
+//   }
+// }

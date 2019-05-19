@@ -11,15 +11,14 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link
-    href="https://fonts.googleapis.com/css?family=Gugi"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
   <link rel="stylesheet" href="scss/custom.css">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand logoName" href="index.html" >J. TYLER</a>
+<body id='MyHome'>
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <a class="navbar-brand logoName" href="index.html">J. TYLER</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -28,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#MyHome">Home <span class="sr-only">(current)</span></a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link" href="#">Projects</a>
@@ -39,18 +38,18 @@
             Projects
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Brit Lamour Clone</a>
-            <a class="dropdown-item" href="#">First Portfolio</a>
+            <a class="dropdown-item" href="https://brit-lamour.jtylerray.com">Brit Lamour Clone</a>
+            <a class="dropdown-item" href="https://jtylerray.com">First Portfolio</a>
             <!-- <div class="dropdown-divider"></div> -->
-            <a class="dropdown-item" href="#">Typing Trainer</a>
-            <a class="dropdown-item" href="#">Ray's Rentals</a>
+            <a class="dropdown-item" href="https://typing.jtylerray.com">Typing Trainer</a>
+            <a class="dropdown-item" href="https://rentals.jtylerray.com">Ray's Rentals</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Skills</a>
+          <a class="nav-link" href="#MySkills" tabindex="-1" aria-disabled="true">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">About</a>
+          <a class="nav-link" href="#MyAbout" tabindex="-1" aria-disabled="true">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Blog</a>
@@ -62,19 +61,284 @@
       </form> -->
     </div>
   </nav>
+  <!-- Background & Landing -->
+  <div class="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./imgs/Backgrounds/Images/website2.jpeg" class="d-block myBackground" alt="Background">
+        <div class="carousel-caption">
+          <h1 class="display-2 main-title">J. Tyler Ray</h1>
+          <h3 class='mb-4 sub-title'>Web-design, made <span id='typed'></span></h3>
+          <button class="btn btn-outline-light btn-lg mb-4 mr-2 ml-2" type='button'>Learn More</button>
+          <button class="btn btn-success btn-lg mb-4 mr-2 ml-2" type='button'>Contact Tyler</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Skills Paragraph-->
+  <div class="container p-5" id='MySkills'>
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="display-4">Skills:</h3>
+        <p class="lead">In a never-ending quest for knowledge, I'm always looking for new skills and abilites. New
+          technologies, new frameworks, new libraries, new languages all tend to pique my interest like nothing else.
+        </p>
+        <p class='lead'>If I'm not working on something, I'm working on learning something. Often in the course of
+          working on something I'll find I need to learn another skill, and that excites me like nothing else!</p>
+        <p class="lead">I love to learn and I love to create. Take a look at some of the web development skills I've
+          obtained recently!</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <a href="https://www.youracclaim.com/badges/66970c7f-b696-466c-92cb-1056cb641769/public_url">
+          <img src="./imgs/svgs/DevMountain_Web_Badge.png" alt="computer" class="img-fluid">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills Cards -->
+  <div class="container">
+    <div class="row skillsRow m-5">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/HTML.svg" alt="HTML" class="card-img">
+          <h3 class="card-title">HTML 5</h3>
+
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/CSS.svg" alt="CSS" class="card-img">
+          <h3 class="card-title">CSS 3</h3>
+
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/JavaScript.svg" alt="JavaScript" class="card-img">
+          <h3 class="card-title">JavaScript</h3>
+
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/Node.svg" alt="React.js" class="card-img">
+          <h3 class="card-title">Node.js</h3>
+
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/React.svg" alt="CSS" class="card-img">
+          <h3 class="card-title">React.js</h3>
+
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/Git.svg" alt="CSS" class="card-img">
+          <h3 class="card-title">Git</h3>
+
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/AdobeXD.svg" alt="CSS" class="card-img">
+          <h3 class="card-title">Adobe XD</h3>
+
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/PSD.svg" alt="CSS" class="card-img">
+          <h3 class="card-title">Photoshop</h3>
+
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/jQuery.svg" alt="CSS" class="card-img">
+          <h3 class="card-title">jQuery</h3>
+
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/SASS.svg" alt="CSS" class="card-img">
+          <h3 class="card-title">SCSS</h3>
+
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/PostgreSQL.svg" alt="CSS" class="card-img">
+          <h3 class="card-title">PostgreSQL</h3>
+
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/MS OFFICE.svg" alt="CSS" class="card-img">
+          <h3 class="card-title">MS Office</h3>
+
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/JEST.svg" alt="CSS" class="card-img">
+          <h3 class="card-title">Jest</h3>
+
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/uxui.svg" alt="CSS" class="card-img">
+          <h3 class="card-title">UX/UI</h3>
+
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/Boostrap_logo.svg" alt="CSS" class="card-img">
+          <h3 class="card-title">Bootstrap 4</h3>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card text-center">
+          <img src="./imgs/SVGs/Skills/Ellipsis.svg" alt="CSS" class="card-img">
+          <h3 class="card-title">And More!</h3>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+  <!-- Projects Cards -->
+  <div class="container">
+    <h2 class="display-3 mb-5">Projects:</h2>
+    <div class="row">
+      <!-- NEW PORTFOLIO CARD -->
+      <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card  mb-5">
+          <img src="./imgs/projects/Coming soon.jpg" alt="Newer portfolio" class="card-img-top">
+          <div class="card-body">
+            <div class="card-title">New Portfolio</div>
+            <div class="card-text lead mb-3">Coming soon</div>
+            <div class="card-text">This is my newest project an updated portfolio site, and a chance to learn some new technology. Using:
+              <ul>
+                <li>Boostrap.js</li>
+                <li>Typed.js</li>
+                <li>Probably Node.js</li>
+              </ul>
+            </div>
+            <div class="text-center d-flex justify-content-around mt-3">
+              <a href="#" class=" btn btn-primary">Live Site</a>
+              <a href="#" class="btn btn-secondary">Github Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BRIT-LAMOUR SITE CLONE CARD -->
+      <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card  mb-5">
+          <img src="./imgs/projects/Brit Lamour 1.JPG" alt="Newer portfolio" class="card-img-top">
+          <div class="card-body">
+            <div class="card-title">Brit-Lamour Blog Clone</div>
+            <!-- <div class="card-text lead mb-3">Coming soon</div> -->
+            <div class="card-text">Clone of existing site <a href="britlamour.com" class="card-link">BritLamour.com</a> Using:
+            <ul>
+              <li>React.js</li>
+              <li>Node.js</li>
+            </ul>
+            </div>
+            <div class="text-center d-flex justify-content-around mt-3">
+              <a href="#" class=" btn btn-primary">Live Site</a>
+              <a href="#" class="btn btn-secondary">Github Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIRST PORTFOLIO CARD -->
+      <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card  mb-5">
+          <img src="./imgs/projects/Portfolio.JPG" alt="Newer portfolio" class="card-img-top">
+          <div class="card-body">
+            <div class="card-title">New Portfolio</div>
+            <!-- <div class="card-text lead mb-3">Coming soon</div> -->
+            <div class="card-text">This is a test for my new portfolio site</div>
+            <div class="text-center d-flex justify-content-around mt-3">
+              <a href="#" class=" btn btn-primary">Live Site</a>
+              <a href="#" class="btn btn-secondary">Github Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TYPING TRAINER CARD -->
+      <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card  mb-5">
+          <img src="./imgs/projects/Typing trainer.JPG" alt="Newer portfolio" class="card-img-top">
+          <div class="card-body">
+            <div class="card-title">New Portfolio</div>
+            <!-- <div class="card-text lead mb-3">Coming soon</div> -->
+            <div class="card-text">This is a test for my new portfolio site</div>
+            <div class="text-center d-flex justify-content-around mt-3">
+              <a href="#" class=" btn btn-primary">Live Site</a>
+              <a href="#" class="btn btn-secondary">Github Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- RAYS-RENTALS CARD -->
+      <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">  
+        <div class="card  mb-5">
+          <img src="./imgs/projects/ray-rentalsjpg.jpg" alt="Newer portfolio" class="card-img-top">
+          <div class="card-body">
+            <div class="card-title">New Portfolio</div>
+            <!-- <div class="card-text lead mb-3">Coming soon</div> -->
+            <div class="card-text">This is a test for my new portfolio site</div>
+            <div class="text-center d-flex justify-content-around mt-3">
+              <a href="#" class=" btn btn-primary">Live Site</a>
+              <a href="#" class="btn btn-secondary">Github Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id='MyAbout'>
+    <h2 class="display-3">About <span class="my-name font-weight-light">J. TYLER</span></h2>
+  </div>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>k
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+  <script>
+    $('document').ready(() => {
+      var typed = new Typed('#typed', {
+        strings: ['cool', 'easy', 'awesome', 'elegant', 'effortless', 'fun', 'neat', 'for you', 'stylish', 'nifty', 'modern', 'fantastic', 'impressive', 'beautiful', 'breathtaking', ''],
+        backDelay: 2000,
+        backSpeed: 50,
+        typeSpeed: 100,
+        loop: true,
+        shuffle: tr
+      })
+    })
+
+
+
+  </script>
 </body>
 
 </html>
